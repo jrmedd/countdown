@@ -1,5 +1,5 @@
 import * as React from 'react'
-import useInterval from './useInterval'
+import useInterval from './useInterval.js'
 import { Theme, lightTheme } from './theme'
 import styled, { css } from 'styled-components'
 
