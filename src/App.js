@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components'
 
 const StyledMain = styled.main(props => css`
   width: 65rem;
-  max-width: 100%;
+  max-width: 100vw;
   margin: 0 auto;
   height: 100vh;
   max-height: 100vh;
@@ -19,6 +19,7 @@ const StyledDescriptionList = styled.dl(props => css`
   flex-flow: row wrap;
   justify-content: center;
   margin: 0;
+  max-width: 100%;
 `)
 
 const DigitDisplay = styled.div(props => css`
