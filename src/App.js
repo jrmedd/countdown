@@ -47,7 +47,7 @@ const StyledDescription = styled.dd(props => css`
 
 function App () {
   const [timeNow, setTimeNow] = React.useState(new Date())
-  const [startDate, setStartDate] = React.useState(new Date('2022-10-17T00:00:00.000Z'))
+  const [startDate, setStartDate] = React.useState(new Date('2022-10-07T17:00:00.000Z'))
   const [daysRemaining, setDaysRemaining] = React.useState(0)
   const [hoursRemaining, setHoursRemaining] = React.useState(0)
   const [minutesRemaining, setMinutesRemaining] = React.useState(0)
