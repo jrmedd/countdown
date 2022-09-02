@@ -1,10 +1,10 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 export const lightTheme = {
-  colourA: '#00303b',
-  colourB: '#ff7777',
-  colourC: '#ffce96',
-  colourD: '#f1f2da'
+  colourA: '#8a8afb',
+  colourB: '#5a71ff',
+  colourC: '#383869',
+  colourD: '#101820'
 }
 
 const GlobalStyle = createGlobalStyle`

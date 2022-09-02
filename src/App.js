@@ -71,7 +71,7 @@ function App () {
     <Theme>
       <StyledMain>
         <StyledDescriptionList>
-          <DigitDisplay color={lightTheme.colourB} background={lightTheme.colourA}>
+          <DigitDisplay color={lightTheme.colourC} background={lightTheme.colourA}>
             <StyledTerm>
               days
             </StyledTerm>
@@ -79,7 +79,7 @@ function App () {
               {daysRemaining}
             </StyledDescription>
           </DigitDisplay>
-          <DigitDisplay color={lightTheme.colourA} background={lightTheme.colourB}>
+          <DigitDisplay color={lightTheme.colourD} background={lightTheme.colourB}>
             <StyledTerm>
               hours
             </StyledTerm>
@@ -87,7 +87,7 @@ function App () {
               {hoursRemaining}
             </StyledDescription>
           </DigitDisplay>
-          <DigitDisplay color={lightTheme.colourA} background={lightTheme.colourD}>
+          <DigitDisplay color={lightTheme.colourB} background={lightTheme.colourD}>
             <StyledTerm>
               minutes
             </StyledTerm>
@@ -95,7 +95,7 @@ function App () {
               {minutesRemaining}
             </StyledDescription>
           </DigitDisplay>
-          <DigitDisplay color={lightTheme.colourB} background={lightTheme.colourC}>
+          <DigitDisplay color={lightTheme.colourA} background={lightTheme.colourC}>
             <StyledTerm>
               seconds
             </StyledTerm>
