@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     body  {
       margin: 0;
       padding: 0;
-      font-family: 'Silkscreen', cursive;
+      font-family: 'Silkscreen', monospace;
       background: #332f35;
     }
     * {

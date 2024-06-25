@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useState, useEffect } from 'react'
 import useInterval from './useInterval.js'
 import { Theme, lightTheme } from './theme'
 import styled, { css } from 'styled-components'
@@ -45,19 +45,19 @@ const StyledDescription = styled.dd(props => css`
   font-size: 2.5rem;
 `)
 
-function App () {
-  const [timeNow, setTimeNow] = React.useState(new Date())
-  const [startDate, setStartDate] = React.useState(new Date('2022-10-07T17:00:00.000Z'))
-  const [daysRemaining, setDaysRemaining] = React.useState(0)
-  const [hoursRemaining, setHoursRemaining] = React.useState(0)
-  const [minutesRemaining, setMinutesRemaining] = React.useState(0)
-  const [secondsRemaining, setSecondsRemaining] = React.useState(0)
-  const [totalSecondsRemaining, setTotalSecondsRemaining] = React.useState(0)
+function App() {
+  const [timeNow, setTimeNow] = useState(new Date())
+  const [startDate, setStartDate] = useState(new Date('2024-07-02T17:30:00.000Z'))
+  const [daysRemaining, setDaysRemaining] = useState(0)
+  const [hoursRemaining, setHoursRemaining] = useState(0)
+  const [minutesRemaining, setMinutesRemaining] = useState(0)
+  const [secondsRemaining, setSecondsRemaining] = useState(0)
+  const [totalSecondsRemaining, setTotalSecondsRemaining] = useState(0)
   useInterval(() => {
     setTimeNow(new Date())
     setTotalSecondsRemaining(Math.floor((startDate - timeNow) / 1000))
   }, 500)
-  React.useEffect(() => {
+  useEffect(() => {
     const daysRemainingTemp = (totalSecondsRemaining / 60 / 60) / 24
     const hoursRemainingTemp = (daysRemainingTemp - Math.floor(daysRemainingTemp)) * 24
     const minutesRemainingTemp = (hoursRemainingTemp - Math.floor(hoursRemainingTemp)) * 60
