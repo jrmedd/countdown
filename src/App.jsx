@@ -34,6 +34,7 @@ const DigitDisplay = styled.div(props => css`
   justify-content: center;
   align-items: center;
   gap: .25rem;
+  flex-grow: 1;
 `)
 
 const StyledTerm = styled.dt(props => css`
@@ -47,7 +48,7 @@ const StyledDescription = styled.dd(props => css`
 
 function App() {
   const [timeNow, setTimeNow] = useState(new Date())
-  const [startDate, setStartDate] = useState(new Date('2024-07-02T17:30:00.000Z'))
+  const [startDate, setStartDate] = useState(new Date('2024-07-02T16:30:00.000Z'))
   const [daysRemaining, setDaysRemaining] = useState(0)
   const [hoursRemaining, setHoursRemaining] = useState(0)
   const [minutesRemaining, setMinutesRemaining] = useState(0)
